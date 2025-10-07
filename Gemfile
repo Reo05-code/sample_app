@@ -33,43 +33,43 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'sassc-rails'
 
 group :development, :test do
-    gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
 
-    # 教材で指定されているgemを追加
+  # 教材で指定されているgemを追加
 
-    gem 'reline'
+   gem 'reline'
 end
 
 group :development do
-    gem 'web-console'
+   gem 'web-console'
 
-    # 教材で指定されているgemを追加
+   # 教材で指定されているgemを追加
 
-    gem 'solargraph'
+   gem 'solargraph'
 
-    gem 'irb'
+   gem 'irb'
 
-    # このgemはirb 1.8.0以降で不要になったためコメントアウト
+   # このgemはirb 1.8.0以降で不要になったためコメントアウト
 
-    # gem "repl_type_completor"
+   # gem "repl_type_completor"
 end
 
 group :test do
-    gem 'capybara'
+   gem 'capybara'
 
-    gem 'selenium-webdriver'
+   gem 'selenium-webdriver'
 
-    # 教材で指定されているgemを追加
+   # 教材で指定されているgemを追加
 
-    gem 'webdrivers'
+   gem 'webdrivers'
 
-    gem 'rails-controller-testing'
+   gem 'rails-controller-testing'
 
-    gem 'minitest'
+   gem 'minitest'
 
-    gem 'minitest-reporters'
+   gem 'minitest-reporters'
 
-    gem 'guard'
+   gem 'guard'
 
-    gem 'guard-minitest'
+   gem 'guard-minitest'
 end
