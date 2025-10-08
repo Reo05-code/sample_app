@@ -10,7 +10,6 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.8'
 
-gem 'sprockets-rails'
 
 gem 'sqlite3', '~> 1.4'
 
@@ -30,7 +29,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # 教材で指定されているgemを追加
 
-gem 'sassc-rails'
+gem 'bootstrap-sass', '~>3.4.1'
+gem 'sassc-rails', '2.1.2'
+gem 'sprockets-rails', '3.4.2'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
