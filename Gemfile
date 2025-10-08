@@ -73,4 +73,7 @@ group :test do
    gem 'guard'
 
    gem 'guard-minitest'
+
+   gem "bcrypt", "3.1.18"
+
 end
