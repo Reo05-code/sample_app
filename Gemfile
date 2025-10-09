@@ -27,6 +27,8 @@ gem 'bootsnap', require: false
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+gem "bcrypt", "~>3.1.18"
+
 # 教材で指定されているgemを追加
 
 gem 'bootstrap-sass', '~>3.4.1'
@@ -74,6 +76,5 @@ group :test do
 
    gem 'guard-minitest'
 
-   gem "bcrypt", "~>3.1.18"
 
 end
