@@ -3,6 +3,11 @@
 
 /* mixins, variables, etc. */
 
+/* ★修正点1: 未定義だった変数をここで定義します */
+$gray-light: #777;
+$gray: #555;
+$gray-darker: #333;
+$state-danger-text: #a94442;
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
@@ -102,13 +107,33 @@ footer {
     }
   }
   .debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
   }
+}
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
 
-  /* sidebar */
+/* ★修正点2: footerの閉じ括弧を正しい位置に移動しました */
+
+/* sidebar */
 
 aside {
   section.user_info {
@@ -164,6 +189,7 @@ aside {
 }
 
 /* forms */
+
 .form-control {
   border: 1px solid #bbb;
   width: 100%;
@@ -191,8 +217,6 @@ label {
   margin-bottom: 5px;
 }
 
-
-
 #error_explanation {
   color: red;
   ul {
@@ -208,5 +232,8 @@ label {
   }
 }
 
+/* Dropdown menu */
 
+.dropdown-menu.active {
+  display: block;
 }
