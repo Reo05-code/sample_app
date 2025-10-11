@@ -29,6 +29,12 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "bcrypt", "~>3.1.18"
 
+gem "faker",           "2.21.0"
+
+gem "will_paginate",           "3.3.1"
+
+gem "bootstrap-will_paginate", "1.0.0"
+
 # 教材で指定されているgemを追加
 
 gem 'bootstrap-sass', '~>3.4.1'
