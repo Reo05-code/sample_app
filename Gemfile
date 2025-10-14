@@ -10,6 +10,7 @@ ruby '3.1.4'
 
 gem 'rails', '~> 7.0.8'
 
+gem "image_processing",  "1.12.2"
 
 gem 'sqlite3', '~> 1.4'
 
@@ -28,6 +29,8 @@ gem 'bootsnap', require: false
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "bcrypt", "~>3.1.18"
+
+gem "active_storage_validations", "0.9.8"
 
 gem "faker",           "2.21.0"
 
